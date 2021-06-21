@@ -16,6 +16,10 @@ addons:
        - build-essential 
        - npm 
        - wget 
-   
+
+jobs:
+  allow_failures:
+  - node_js: node
+  
 script:
  - cd meteor
